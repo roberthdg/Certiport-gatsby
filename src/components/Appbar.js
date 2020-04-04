@@ -38,11 +38,46 @@ const navStyle={
     cursor:'pointer'
 }
 
+const cursos = [
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+    {
+        titulo:'Arquitectura',
+        descripcion:'Dibujo, Diseño y Visualización de Modelos Arquitectónicos'
+    },
+]
+
 export default function ElevateAppBar(props) {
 
     const classes = useStyles();
 
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(false);
 
     const trigger = useScrollTrigger({
         disableHysteresis: true,
@@ -90,23 +125,29 @@ export default function ElevateAppBar(props) {
             </Box>
          
             <div className={classes.root} id='Servicios'>
-                <Grid container >
-                    {[1,2,3,4,5,6,7,8].map(i => (
-                        <Grid sm={3} md={3} lg={3} key={i} justify='center' alignContent='center' alignItems='center'>
-                            <div className='cursoDiv' onMouseEnter={() => setActive(i)} onMouseLeave={() => setActive(0)}/>
-                            <img src={`/static/curso${i}.jpg`} className={active===i? 'curso activo' : 'curso'}/> 
+                <Grid container>
+                    {cursos.map((curso, i) => (
+                        <Grid sm={3} md={3} lg={3} key={i}>
+                            <div className='cursoDiv' onMouseEnter={() => setActive(i)} onMouseLeave={() => setActive(false)}>
+                                <div className={active===i? 'cursoFiltro' : null}/>
+                                <Typography style={active===i?  {marginTop: '9vw',transition:'0.6s'} : { marginTop:'10vw', transition:'0.6s'}}>
+                                    <span className='titulo'>{curso.titulo}</span> <br />
+                                    <span className='descripcion'><br />{curso.descripcion}</span>
+                                </Typography>
+                            </div>
+                            <img src={`https://fletesya.cl/img/gatsby/curso${i+1}.jpg`} className={active===i? 'curso activo' : 'curso'}/> 
                         </Grid>
                         )
                     )}
                 </Grid>
-                
             </div>
+
         </div>
         
-        <div style={{marginTop:'40vh', top: '0', marginLeft:'20vw', color:'white', position: 'absolute'}}>
-            <Typography variant='h6'>
-                Tu camino al EXITO <br />
-                Mejora tus habilidades con cursos y certificaciones online
+        <div style={{marginTop:'38vh', top: '0', marginLeft:'16vw', color:'white', position: 'absolute'}}>
+            <Typography variant='h4'>
+                <span style={{fontSize:'70px'}}>Tu camino al ÉXITO </span> <br />
+                Mejora tus habilidades con cursos y certificaciones online <br /> <br />
             </Typography>           
             <a className='button'> Más información</a>
         </div>

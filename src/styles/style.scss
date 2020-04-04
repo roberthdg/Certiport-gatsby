@@ -7,11 +7,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.9vw;
+    margin-top: 2vw;
+    transition: .6s;
 }
 
 .activo {
-    transition: .6s;
     transform: scale(1.1);
 }
 
@@ -19,17 +19,31 @@
     position: absolute;
     width: 24.8vw;
     z-index: 2;
-    height: 24.8vw;
+    height: 25vw;
     border: 2vw solid white;
     cursor: pointer;
 }
 
+.cursoFiltro {
+    width:100%;
+    height:100%; 
+    background-color:black;
+    opacity: 0.4; 
+    z-index: -2; 
+    position:absolute;
+}
+
 .background {
     top: 0;
-    left:0;
-    width: 100vw;
+    left: 0; 
+    height: 100vh;
     position: absolute;
     z-index: -1;
+    &::after {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 .footer {
@@ -42,12 +56,31 @@
 }
 
 .button {
-    padding: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: lightblue;
     text-transform: uppercase;
+    font-size: 20px;
     cursor: pointer;
     &:hover {
         color: black;
         background-color: white;
     }
+}
+
+.titulo {
+    z-index: 3;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    text-transform: uppercase;
+    color: rgb(51,51,51);
+}
+
+.descripcion {
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
 }

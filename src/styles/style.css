@@ -3,7 +3,7 @@
 }
 
 .navItem:hover {
-  color: #9c9999;
+  color: lightblue;
 }
 
 .curso {
@@ -12,12 +12,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.9vw;
+  margin-top: 2vw;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .activo {
-  -webkit-transition: .6s;
-  transition: .6s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -26,17 +26,32 @@
   position: absolute;
   width: 24.8vw;
   z-index: 2;
-  height: 24.8vw;
+  height: 25vw;
   border: 2vw solid white;
   cursor: pointer;
+}
+
+.cursoFiltro {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: -2;
+  position: absolute;
 }
 
 .background {
   top: 0;
   left: 0;
-  width: 100vw;
+  height: 100vh;
   position: absolute;
   z-index: -1;
+}
+
+.background::after {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 .footer {
@@ -49,14 +64,33 @@
 }
 
 .button {
-  padding: 10px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: lightblue;
   text-transform: uppercase;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .button:hover {
   color: black;
   background-color: white;
+}
+
+.titulo {
+  z-index: 3;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.descripcion {
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */

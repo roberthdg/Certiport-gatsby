@@ -20,8 +20,8 @@ function Layout() {
   return (
   <> 
     <ThemeProvider theme={theme}>
-      <Appbar />}
-      <img src='/static/background.jpeg' id='Inicio' className='background' draggable={false} />;
+      <Appbar />
+      <img src='https://fletesya.cl/img/gatsby/background.jpeg' id='Inicio' className='background' draggable={false} />
     </ThemeProvider>
   </>
   )
