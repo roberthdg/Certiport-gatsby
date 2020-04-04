@@ -1,0 +1,62 @@
+.navItem {
+  padding: 3vh;
+}
+
+.navItem:hover {
+  color: #9c9999;
+}
+
+.curso {
+  width: 21vw;
+  z-index: -0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.9vw;
+}
+
+.activo {
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cursoDiv {
+  position: absolute;
+  width: 24.8vw;
+  z-index: 2;
+  height: 24.8vw;
+  border: 2vw solid white;
+  cursor: pointer;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer {
+  margin-top: 93vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  width: 101vw;
+}
+
+.button {
+  padding: 10px;
+  background-color: lightblue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
