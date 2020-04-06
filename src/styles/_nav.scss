@@ -1,6 +1,12 @@
 .navItem {
     padding: 3vh;
     &:hover{
-        color:lightblue;
+        color:#3c749e;
+    }
+}
+
+.top {
+    &:hover{
+        color: rgb(131,205,220);
     }
 }

@@ -21,7 +21,7 @@ function Layout() {
   <> 
     <ThemeProvider theme={theme}>
       <Appbar />
-      <img src='https://fletesya.cl/img/gatsby/background.jpeg' id='Inicio' className='background' draggable={false} />
+      <img src='https://fletesya.cl/img/gatsby/background.jpeg' id='inicio' className='background' draggable={false} />
     </ThemeProvider>
   </>
   )

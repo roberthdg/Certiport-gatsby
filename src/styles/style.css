@@ -3,7 +3,11 @@
 }
 
 .navItem:hover {
-  color: lightblue;
+  color: #3c749e;
+}
+
+.top:hover {
+  color: #83cddc;
 }
 
 .curso {
@@ -43,7 +47,7 @@
 .background {
   top: 0;
   left: 0;
-  height: 100vh;
+  width: 100vw;
   position: absolute;
   z-index: -1;
 }
@@ -67,7 +71,8 @@
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: lightblue;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3c749e), to(#54b7cb));
+  background: linear-gradient(90deg, #020024 0%, #3c749e 0%, #54b7cb 100%);
   text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
@@ -75,7 +80,7 @@
 
 .button:hover {
   color: black;
-  background-color: white;
+  background: white;
 }
 
 .titulo {
@@ -92,5 +97,15 @@
   color: white;
   font-weight: 400;
   font-size: 17px;
+}
+
+#servicios {
+  padding-top: 50px;
+}
+
+#contacto {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #001037), to(#4eb8cd));
+  background: linear-gradient(90deg, #020024 0%, #001037 0%, #4eb8cd 100%);
 }
 /*# sourceMappingURL=style.css.map */
