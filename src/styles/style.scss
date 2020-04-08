@@ -1,6 +1,11 @@
 
 @import './nav';
 
+@font-face {
+    font-family: 'Fellix';
+    src: local('Fellix'), url('../fonts/fellix.otf') format('opentype');
+  }
+
 .curso {
     width: 21vw;
     z-index: -0;
@@ -56,6 +61,7 @@
 }
 
 .button {
+    font-family: 'Fellix';
     padding: 15px;
     padding-left: 30px;
     padding-right: 30px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Appbar from '../components/Appbar';
+import Layout from '../components/Layout';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import '../styles/style.css'
 
@@ -16,17 +16,14 @@ const theme = createMuiTheme({
   }
 });
 
-function Layout() {
+function Index() {
   return (
-  <> 
     <ThemeProvider theme={theme}>
-      <Appbar />
-      <img src='https://fletesya.cl/img/gatsby/background.jpeg' id='inicio' className='background' draggable={false} />
+      <Layout />
     </ThemeProvider>
-  </>
   )
 }
 
 
 
-export default Layout;
+export default Index;
