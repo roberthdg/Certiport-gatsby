@@ -51,7 +51,7 @@ export default function Content(props) {
                                 <span className='descripcion'><br />{curso.descripcion}</span>
                             </Typography>
                         </div>
-                        <img src={`https://fletesya.cl/img/gatsby/curso${i+1}.jpg`} className={active===i? 'curso activo' : 'curso'}/> 
+                        <img src={`/curso${i+1}.jpg`} className={active===i? 'curso activo' : 'curso'}/> 
                     </Grid>
                     )
                 )}
