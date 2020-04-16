@@ -114,4 +114,20 @@
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #001037), to(#4eb8cd));
   background: linear-gradient(90deg, #020024 0%, #001037 0%, #4eb8cd 100%);
 }
+
+.logo {
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 20%;
+  margin-top: 25px;
+  width: 200px;
+}
+
+.topLogo {
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 20%;
+  margin-top: 17px;
+  width: 150px;
+}
 /*# sourceMappingURL=style.css.map */

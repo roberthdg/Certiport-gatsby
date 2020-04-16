@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box'
 import Courses from './Courses'
+import Calendar from './Calendar'
 
 export default function Content(props) {
     return (
@@ -25,13 +26,16 @@ export default function Content(props) {
             
                 <Box display="flex" width='100%'>
                     <Box m="auto" style={{fontWeight: '300', maxWidth:'60%', fontSize:'25px'}}>
-                        En <strong>Certiport</strong> nos especializamos por tener a tu disposición los mejores cursos de capacitación para diferentes áreas de especialización. 
+                        En <strong>Yachana</strong> nos especializamos por tener a tu disposición los mejores cursos de capacitación para diferentes áreas de especialización. 
                         Contamos con una plataforma diseñada especialmente para cursos en línea, con profesores preparados y trabajando actualmente en su área y certificación 
                         internacional avalada por <strong >Autodesk®</strong> lo que te permitirá tener la mejor experiencia en estudios a distancia. 
                     </Box>
                 </Box>
             
                 <Courses classes={props.classes}/>
+
+                <Calendar classes={props.classes}/>
+
             </div>
             
             <div id='contacto' style={{marginTop:'6vw', width:'100%', height:'500px', textAlign:'center', color: 'white'}}>

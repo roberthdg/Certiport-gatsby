@@ -99,3 +99,17 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,16,55,1) 0%, rgba(78,184,205,1) 100%);
 }
+
+.logo {
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 200px;
+}
+
+.topLogo {
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 17px;
+    width: 150px;
+}

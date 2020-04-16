@@ -17,7 +17,7 @@ function Appbar(props) {
         <>    
         <AppBar className={props.trigger ? props.classes.appBarScroll : props.classes.appBarTop}>
             <Toolbar>
-                <img src={props.trigger ? 'https://fletesya.cl/img/gatsby/logo.png' : 'https://fletesya.cl/img/gatsby/logo_white.png'} draggable={false} style={{marginLeft:'20%', marginTop: '10px',width:'200px'}}/>
+                <img src={props.trigger ? '/static/logo.png' : '/static/logo_white.png'} className={props.trigger ? 'topLogo' : 'logo'} draggable={false} />
             </Toolbar>
             <Typography style={navStyle}> 
                 <span onClick={()=> props.scrollTo(document.getElementById('inicio'))} className={props.trigger ? 'navItem' : 'navItem top'}> Inicio </span>
