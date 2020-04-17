@@ -32,7 +32,7 @@ const cursos = [
 export default function Content(props) {
     const [active, setActive] = useState()
     return (
-        <div className={props.classes.root} id='servicios'>
+        <div className={props.classes.root}>
             <Grid container align="center" style={{maxWidth:'1500px', margin:'auto'}}>
                 {cursos.map((curso, i) => (
                     <Grid item sm={11} md={11} lg={4} align="center" key={i} style={{paddingTop:'50px'}}>

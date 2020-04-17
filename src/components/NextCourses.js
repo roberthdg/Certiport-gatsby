@@ -8,21 +8,22 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 
-const div = {
-    background:'rgb(239,240,244)',
-    marginTop: '5%'
-}
-
 let courses = [
     {},{},{}
 ]
 
+const div = {
+    background:'rgb(241,246,248)',
+    marginTop: '100px',
+    paddingTop:'100px',
+    paddingBottom:'100px',
+}
+
 export default function Content(props) {
     return (
-        <>
-        <div className={props.classes.root} id='Calendario' style={div}>
-            <br></br><br></br><Typography variant='h4'>Próximos cursos <strong>OnLine</strong></Typography><br></br>
-            <Grid container  style={{maxWidth:'1800px', margin:'auto'}}>
+        <div className={props.classes.root} id='cursos' style={div}>
+            <Typography variant='h4'>Próximos cursos <strong>OnLine</strong></Typography>
+            <Grid container  style={{maxWidth:'1800px', margin:'auto', marginTop:'10px'}}>
                 {courses.map((course, i) => (
                     <Grid item sm={11} lg={4}
                         spacing={0}
@@ -56,9 +57,6 @@ export default function Content(props) {
                     </Grid>)
                 )}  
             </Grid>
-            <br></br><br></br><br></br><br></br>
         </div>
-        
-        </>
     );
 }

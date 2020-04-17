@@ -67,7 +67,7 @@ export default function Layout(props) {
         <Content classes={classes} trigger={trigger} scrollTo={scrollTo}/>
 
         <footer style={{width:'100%', height:'40px', paddingTop:'10px', paddingLeft:'10vw', marginTop:'-2vh', background:'rgb(31,84,115)', color:'white'}}>
-            Certiport © 2020 | Designed by <a href='https://github.com/roberthdg' target='_blank' style={{textDecoration:'none', color: 'white'}}><strong>Roberth Gómez</strong></a>           
+           © 2020 | Made by <a href='https://roberthdg.site' target='_blank' style={{textDecoration:'none', color: 'white'}}><strong>Roberth Gómez</strong></a>           
         </footer>
         </>
     );

@@ -21,8 +21,8 @@ function Appbar(props) {
             <Typography style={navStyle}> 
                 <span onClick={()=> props.scrollTo(document.getElementById('inicio'))} className={props.trigger ? 'navItem' : 'navItem top'}> Inicio </span>
                 <span onClick={()=> props.scrollTo(document.getElementById('nosotros'))}  className={props.trigger ? 'navItem' : 'navItem top'}> Nosotros </span>
-                <span onClick={()=> props.scrollTo(document.getElementById('servicios'))}  className={props.trigger ? 'navItem' : 'navItem top'}> Servicios </span>
-                <span onClick={()=> props.scrollTo(document.getElementById('contacto'))} className={props.trigger ? 'navItem' : 'navItem top'}> Contacto </span>
+                <span onClick={()=> props.scrollTo(document.getElementById('cursos'))}  className={props.trigger ? 'navItem' : 'navItem top'}> Cursos </span>
+                <span onClick={()=> props.scrollTo(document.getElementById('contacto'))} className={props.trigger ? 'navItem' : 'navItem top'}> Contáctanos </span>
             </Typography>
         </AppBar>
         </>
