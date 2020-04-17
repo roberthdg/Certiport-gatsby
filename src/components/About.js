@@ -13,9 +13,8 @@ export default function Content(props) {
         
             <Box display="flex" width='100%'>
                 <Box m="auto" style={{fontWeight: '300', maxWidth:'60%', fontSize:'25px'}}>
-                    En <strong>Yachana</strong> nos especializamos por tener a tu disposición los mejores cursos de capacitación para diferentes áreas de especialización. 
-                    Contamos con una plataforma diseñada especialmente para cursos en línea, con profesores preparados y trabajando actualmente en su área y certificación 
-                    internacional avalada por <strong >Autodesk®</strong> lo que te permitirá tener la mejor experiencia en estudios a distancia. 
+                    En <strong>Yachana</strong> nos especializamos por tener a tu disposición los mejores cursos de capacitación para diferentes áreas de diseño y edición, con profesores altamente calificados y certificación 
+                    internacional avalada por <strong >Autodesk®</strong>, permitiéndote tener la mejor experiencia en estudios a distancia. 
                 </Box>
             </Box>
         </div>

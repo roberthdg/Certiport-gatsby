@@ -12,7 +12,6 @@ const navStyle={
 }
 
 function Appbar(props) {
-
     return (
         <>    
         <AppBar className={props.trigger ? props.classes.appBarScroll : props.classes.appBarTop}>

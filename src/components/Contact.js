@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 export default function Content(props) {
     return (            
         <div id='contacto' style={{marginTop:'6vw', width:'100%', height:'500px', textAlign:'center', color: 'white'}}>
-            <img src='/bottom.png' draggable={false}/>
+            <img src='/bottom.png' draggable={false} style={{width:'100vw'}}/>
 
             <Grid container style={{marginTop:'60px'}}>
                 <Grid item lg={6}>

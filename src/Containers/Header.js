@@ -1,6 +1,6 @@
 import React from 'react';
-import Appbar from '../components/Appbar';
 import Typography from '@material-ui/core/Typography';
+import Appbar from '../components/Appbar';
 
 export default function Header(props) {
     return (

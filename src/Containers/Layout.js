@@ -10,6 +10,10 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
       },
+    card: {
+        marginTop: 50,
+        maxWidth: 370,
+    },
     appBarTop: {
       color: 'white',
       backgroundColor: 'transparent',
@@ -25,6 +29,10 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: 'white',
+    },
+    media: {
+        width: 370,
+        height: 340,
     },
 }));
 
@@ -48,13 +56,13 @@ export default function Layout(props) {
         <>    
         <Helmet>
             <meta charSet="utf-8" />
-            <title>Cursos Online | Presenciales</title>
+            <title>Yachana | Cursos Online y Presenciales</title>
         </Helmet>
 
         {/* material-UI styles */}
         <CssBaseline />
 
-        <Header classes={classes} scrollTo={scrollTo}/>
+        <Header classes={classes} trigger={trigger} scrollTo={scrollTo}/>
 
         <Content classes={classes} trigger={trigger} scrollTo={scrollTo}/>
 
