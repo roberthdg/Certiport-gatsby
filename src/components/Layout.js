@@ -4,7 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Header from './Header';
-import Content from './Content';
+import About from './About';
+import CoursesInfo from './CoursesInfo';
+import NextCourses from './NextCourses';
+import Contact from './Contact';
+import Info from './Info';
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -64,10 +69,16 @@ export default function Layout(props) {
 
         <Header classes={classes} trigger={trigger} scrollTo={scrollTo}/>
 
-        <Content classes={classes} trigger={trigger} scrollTo={scrollTo}/>
+        <main style={{textAlign:'center'}}>    
+            <About />
+            <CoursesInfo classes={classes}/>
+            <NextCourses classes={classes}/>
+            <Contact />
+            <Info />
+        </main>
 
         <footer style={{width:'100%', height:'40px', paddingTop:'10px', paddingLeft:'10vw', marginTop:'-2vh', background:'rgb(31,84,115)', color:'white'}}>
-           © 2020 | Made by <a href='https://roberthdg.site' target='_blank' style={{textDecoration:'none', color: 'white'}}><strong>Roberth Gómez</strong></a>           
+          © 2020 | Made by <a href='https://roberthdg.site' target='_blank' style={{textDecoration:'none', color: 'white'}}><strong>Roberth Gómez</strong></a>           
         </footer>
         </>
     );

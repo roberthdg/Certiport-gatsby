@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Fellix';
+  src: local("Fellix"), url("../fonts/fellix.otf") format("opentype");
+}
+
 .navItem {
   padding: 3vh;
 }
@@ -10,12 +15,65 @@
   color: #83cddc;
 }
 
-@font-face {
-  font-family: 'Fellix';
-  src: local("Fellix"), url("../fonts/fellix.otf") format("opentype");
+.logo {
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 20%;
+  margin-top: 25px;
+  width: 200px;
 }
 
-.curso {
+.topLogo {
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 20%;
+  margin-top: 17px;
+  width: 150px;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.background::after {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  font-family: 'Fellix';
+  padding: 15px 30px 20px 30px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3c749e), to(#54b7cb));
+  background: linear-gradient(90deg, #020024 0%, #3c749e 0%, #54b7cb 100%);
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+  background: white;
+}
+
+.banner {
+  margin-top: 35vh;
+  top: 0;
+  margin-left: 16vw;
+  color: white;
+  position: absolute;
+}
+
+.slogan {
+  font-size: 77px;
+}
+
+.cursoImg {
   width: 400px;
   z-index: -99;
   display: block;
@@ -26,7 +84,7 @@
 
 .activo {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .cursoBorder {
@@ -47,55 +105,12 @@
   z-index: -1;
 }
 
-.cursoTitulo {
+.cursoTexto {
+  -webkit-transition: .6s;
   transition: .6s;
   max-width: 80%;
   padding-top: 200px;
   z-index: 4;
-}
-
-.hover {
-  padding-top: 170px;
-}
-
-.background {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-}
-
-.background::after {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
-
-.footer {
-  margin-top: 93vh;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  width: 101vw;
-}
-
-.button {
-  font-family: 'Fellix';
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #3c749e), to(#54b7cb));
-  background: linear-gradient(90deg, #020024 0%, #3c749e 0%, #54b7cb 100%);
-  text-transform: uppercase;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: black;
-  background: white;
 }
 
 .titulo {
@@ -114,25 +129,26 @@
   font-size: 17px;
 }
 
+.hover {
+  padding-top: 170px;
+}
+
+.footer {
+  margin-top: 93vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  width: 101vw;
+}
+
+#servicios {
+  padding-top: 50px;
+}
+
 #contacto {
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #001037), to(#4eb8cd));
   background: linear-gradient(90deg, #020024 0%, #001037 0%, #4eb8cd 100%);
-}
-
-.logo {
-  -webkit-transition: .3s;
-  transition: .3s;
-  margin-left: 20%;
-  margin-top: 25px;
-  width: 200px;
-}
-
-.topLogo {
-  -webkit-transition: .3s;
-  transition: .3s;
-  margin-left: 20%;
-  margin-top: 17px;
-  width: 150px;
 }
 /*# sourceMappingURL=style.css.map */

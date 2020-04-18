@@ -38,16 +38,17 @@ export default function Content(props) {
                     <Grid item sm={11} md={11} lg={4} align="center" key={i} style={{paddingTop:'50px'}}>
                         <div onMouseEnter={() => setActive(i)} onMouseLeave={() => setActive(false)}>
                             <div className='cursoBorder'>
-                            <div className={active===i? 'cursoFiltro' : null} />
-                            <img src={`/curso${i+1}.jpg`} className={active===i? 'curso activo' : 'curso'}/>
-                            <Typography className={active===i? 'cursoTitulo hover' : 'cursoTitulo'}>
-                                <span className='titulo'>{curso.titulo}</span> <br />
-                                <span className='descripcion'><br />{curso.descripcion}</span>
-                            </Typography>
+                                {/* filter effect */}
+                                <div className={active===i? 'cursoFiltro' : null} />
+
+                                <img src={`/curso${i+1}.jpg`} className={active===i? 'cursoImg activo' : 'cursoImg'}/>
+                                <Typography className={active===i? 'cursoTexto hover' : 'cursoTexto'}>
+                                    <span className='titulo'>{curso.titulo}</span> <br />
+                                    <span className='descripcion'><br />{curso.descripcion}</span>
+                                </Typography>
                             </div>
                         </div>
-                    </Grid>
-                    )
+                    </Grid>)
                 )}
             </Grid>
         </div>

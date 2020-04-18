@@ -1,0 +1,58 @@
+.cursoImg {
+    width: 400px;
+    z-index: -99;
+    display: block;
+    -webkit-transition: .6s;
+    transition: .6s;
+    position: absolute;
+}
+
+.activo {
+    transform: scale(1.1);
+}
+
+.cursoBorder {
+    border: 23px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 445px;
+    height: 445px;
+    z-index: 2;
+}
+  
+.cursoFiltro {
+width: 400px;
+height: 400px;
+background-color: rgba(0, 0, 0, 0.397);
+position: absolute;
+z-index: -1;
+}
+  
+.cursoTexto {
+    transition: .6s;
+    max-width: 80%;
+    padding-top: 200px;
+    z-index: 4;
+}
+
+.titulo {
+    z-index: 3;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    text-transform: uppercase;
+    color: rgb(51,51,51);
+}
+
+.descripcion {
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.hover {
+    padding-top: 170px;
+}
+

@@ -9,7 +9,18 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 
 let courses = [
-    {},{},{}
+    {
+        name:'Revit',
+        description: 'Desarrollo de modelos avanzados de planos arquitectónicos e ingenieria. Manejo de herramientas de alta precisión para la construcción de modelos de información.'
+    },
+    {
+        name:'Fusion 360 / Inventor',
+        description: 'Diseño, modificación, reparación y documentación de modelos CAD 3D. Creación de ensamblajes y rutas de herramientas multiplataforma con CAM integrado.'
+    },
+    {
+        name:'AutoCAD',
+        description: 'Conceptualización de ideas, diseño de productos y simulación de piezas en el área de manufactura. Trabajo con planos en dos y tres dimensiones, creación de renderizados fotorrealistas.'
+    }
 ]
 
 const div = {
@@ -38,19 +49,16 @@ export default function Content(props) {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Lorem ipsum 
+                                        {course.name} 
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        {course.description}
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
+                                <Button size="small" color="primary" style={{margin:'auto'}}>
                                 Regístrate
-                                </Button>
-                                <Button size="small" color="primary">
-                                Contáctanos
                                 </Button>
                             </CardActions>
                         </Card>

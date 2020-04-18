@@ -1,0 +1,65 @@
+.navItem {
+    padding: 3vh;
+    &:hover{
+        color:#3c749e;
+    }
+}
+
+.top {
+    &:hover{
+        color: rgb(131,205,220);
+    }
+}
+
+.logo {
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 200px;
+}
+
+.topLogo {
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 17px;
+    width: 150px;
+}
+
+.background {
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    &::after {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.button {
+    font-family: 'Fellix';
+    padding: 15px 30px 20px 30px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,116,158,1) 0%, rgba(84,183,203,1) 100%);
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+        color: black;
+        background: white;
+    }
+}
+
+.banner {
+    margin-top: 35vh;
+    top: 0;
+    margin-left: 16vw;
+    color: white; 
+    position: absolute;
+}
+
+.slogan {
+    font-size: 77px;
+}
