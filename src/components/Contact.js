@@ -5,7 +5,7 @@ import Input from '@material-ui/core/Input';
 export default function Content(props) {
     return (
         <div id='contactanos' style={{marginTop:'100px', width:'100%'}}>
-            <Typography variant='h4'>
+            <Typography variant='h4' style={{ fontFamily:'fellix'}}>
                 ¿Listo para crear experiencias? <strong>Contáctanos</strong>
             </Typography>
             <form noValidate autoComplete="off" style={{padding:'100px'}}>

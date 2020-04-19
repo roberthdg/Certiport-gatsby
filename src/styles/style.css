@@ -142,6 +142,25 @@
   width: 101vw;
 }
 
+.infoLogo {
+  max-width: 330px;
+}
+
+.infoTexto {
+  padding: 25px 0 15px 0;
+  font-size: 19px;
+  max-width: 330px;
+  margin: auto;
+}
+
+.ubicacionTexto {
+  font-size: 18px;
+}
+
+.icono {
+  font-size: 30px;
+}
+
 #servicios {
   padding-top: 50px;
 }
@@ -150,5 +169,9 @@
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #001037), to(#4eb8cd));
   background: linear-gradient(90deg, #020024 0%, #001037 0%, #4eb8cd 100%);
+  margin-top: 6vw;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

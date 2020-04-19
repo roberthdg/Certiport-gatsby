@@ -27,13 +27,15 @@ const div = {
     background:'rgb(241,246,248)',
     marginTop: '100px',
     paddingTop:'100px',
-    paddingBottom:'100px',
+    paddingBottom:'100px'
 }
 
 export default function Content(props) {
     return (
         <div className={props.classes.root} id='cursos' style={div}>
-            <Typography variant='h4'>Próximos cursos <strong>OnLine</strong></Typography>
+            <Typography variant='h4' style={{fontFamily:'fellix'}}>
+                Próximos cursos <strong>OnLine</strong>
+            </Typography>
             <Grid container  style={{maxWidth:'1800px', margin:'auto', marginTop:'10px'}}>
                 {courses.map((course, i) => (
                     <Grid item sm={11} lg={4}
