@@ -56,6 +56,8 @@ body {
     font-size: 77px;
 }
 
+
+
 @media only screen and (min-width: 901px) {
     .background {
         top: 0;
@@ -68,6 +70,10 @@ body {
             width: 100vw;
             height: 100vh;
         }
+    }
+
+    .toggle {
+        display: none;
     }
 }
 
@@ -118,6 +124,16 @@ body {
         font-size: 16px;
     }
 
+    .toggle {
+        position: absolute;
+        top: 8px; 
+        right: 10px;
+        transition: 0.3s;
+    }
+
+    .scroll {
+        top: 15px;
+    }
 
 
 }

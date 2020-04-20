@@ -77,6 +77,9 @@ body {
     width: 100vw;
     height: 100vh;
   }
+  .toggle {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -117,6 +120,16 @@ body {
   .button {
     padding: 13px;
     font-size: 16px;
+  }
+  .toggle {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .scroll {
+    top: 15px;
   }
 }
 

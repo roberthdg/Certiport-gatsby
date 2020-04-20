@@ -30,7 +30,7 @@ export default function Content(props) {
                     <MailOutlineOutlinedIcon style={{fontSize: '35px'}}/> <br/>  
                     <span className='ubicacionTexto'> sales@centrodecapacitacion.com </span> <br/><br/>
                 </Grid>
-                <Grid item lg={4} sm={11} style={{margin:'auto'}}>
+                <Grid item lg={4} sm={11} style={{margin:'auto'}} id='contactanos'>
                     <p style={{fontSize:'30px', fontFamily:'fellix'}}>
                         ¿Listo para crear experiencias? <br/> <strong>Contáctanos</strong> <br/>
                         <form noValidate autoComplete="off" style={{padding:'100px'}}>
