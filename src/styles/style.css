@@ -215,6 +215,69 @@ body {
   font-weight: 500;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.testimonios {
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 60px;
+  font-size: 20px;
+  -webkit-animation: fadeIn ease 10s;
+          animation: fadeIn ease 10s;
+}
+
+.autor {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.profesion {
+  font-size: 17px;
+  color: #979797;
+}
+
+.punto {
+  height: 9px;
+  width: 9px;
+  background-color: #828282;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.punto:hover {
+  background-color: #4eb8cd;
+}
+
+.active {
+  background-color: #4eb8cd;
+}
+
+.quoteImage {
+  position: absolute;
+  max-width: 32vh;
+  z-index: -1;
+  margin: -3vh 0 0 -5vh;
+  opacity: 0.4;
+}
+
 @media only screen and (max-width: 900px) {
   .cursoImg {
     width: 200px;

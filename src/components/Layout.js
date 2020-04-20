@@ -49,7 +49,12 @@ const useStyles = makeStyles(theme => ({
             width: '80vw',
             height: '75vw'
         },
-    }
+    },
+    textField: {
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        width: '25ch',
+    },
 }));
 
 export default function Layout(props) {
@@ -84,7 +89,7 @@ export default function Layout(props) {
             <About />
             <CoursesInfo classes={classes}/>
             <NextCourses classes={classes}/>
-            <Contact />
+            <Contact classes={classes}/>
             <Info />
         </main>
 
