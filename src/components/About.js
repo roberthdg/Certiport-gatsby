@@ -7,7 +7,7 @@ export default function Content(props) {
             <Box display="flex" width='100%'>
                 <Box m="auto" className='aboutBox1'>  
                 <span className='aboutText'>Cursos Online | Presenciales</span> <br/>
-                Un mundo de posibilidades para tu formación
+                <span className='aboutText2'>Un mundo de posibilidades para tu formación</span>
                 </Box>
             </Box>
         

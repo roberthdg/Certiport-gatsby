@@ -78,6 +78,20 @@ body {
         background-position-x: -190vw;
     }
 
+    .logo {
+        transition: .3s;
+        margin-left: 20%;
+        margin-top: 25px;
+        width: 170px;
+    }
+    
+    .topLogo {
+        transition: .3s;
+        margin-left: 20%;
+        margin-top: 5px;
+        width: 120px;
+    }
+
     .navBar, #about {
         display: none;
     }
@@ -97,7 +111,6 @@ body {
 
     .sloganSub {
         font-size: 22px;
-        line-height: 15px;
     }
 
     .button {

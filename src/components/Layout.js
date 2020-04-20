@@ -24,7 +24,10 @@ const useStyles = makeStyles(theme => ({
         transition: 'smooth',
         color: 'black',
         backgroundColor: 'white',
-        height: '77px'
+        height: '77px',
+        [theme.breakpoints.down('sm')]: {
+            height: '60px'
+        }
     },
     paper: {
         padding: theme.spacing(2),

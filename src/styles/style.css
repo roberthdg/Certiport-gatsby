@@ -84,6 +84,20 @@ body {
     background-size: 340vw;
     background-position-x: -190vw;
   }
+  .logo {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 170px;
+  }
+  .topLogo {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-left: 20%;
+    margin-top: 5px;
+    width: 120px;
+  }
   .navBar, #about {
     display: none;
   }
@@ -99,7 +113,6 @@ body {
   }
   .sloganSub {
     font-size: 22px;
-    line-height: 15px;
   }
   .button {
     padding: 13px;
@@ -205,9 +218,9 @@ body {
     max-width: 80%;
     font-size: 40px;
     padding-top: 120vw;
+    line-height: 55px;
   }
   .aboutBox2 {
-    padding-top: 15px;
     font-weight: 300;
     max-width: 80%;
     font-size: 21px;

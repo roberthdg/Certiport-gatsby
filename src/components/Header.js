@@ -4,8 +4,9 @@ import Appbar from './Appbar';
 
 export default function Header(props) {
     return (
-        <header>
-            <div className='wrapper' id='inicio'>
+        <header >
+            <div id='inicio' style={{top: '0', position:'absolute'}} />
+            <div className='wrapper'>
                 <div className='banner'>
                     <Typography variant='h4' style={{fontFamily: 'Fellix', lineHeight:'55px'}}>
                         <span className='slogan'>Tu camino al <strong>ÉXITO</strong> </span> <br />
