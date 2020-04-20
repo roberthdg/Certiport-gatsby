@@ -14,10 +14,6 @@ import Info from './Info';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-      },
-    card: {
-        marginTop: 50,
-        maxWidth: 370,
     },
     appBarTop: {
       color: 'white',
@@ -35,10 +31,22 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
         color: 'white',
     },
+    card: {
+        marginTop: 50,
+        maxWidth: 370,
+        [theme.breakpoints.down('sm')]: {
+            width: '80vw',
+            marginLeft: '10vw'
+        }
+    },
     media: {
         width: 370,
         height: 340,
-    },
+        [theme.breakpoints.down('sm')]: {
+            width: '80vw',
+            height: '75vw'
+        },
+    }
 }));
 
 export default function Layout(props) {

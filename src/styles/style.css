@@ -3,6 +3,12 @@
   src: local("Fellix"), url("../fonts/fellix.otf") format("opentype");
 }
 
+body {
+  background-image: url("https://fletesya.cl/img/gatsby/background.jpeg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
 .navItem {
   padding: 3vh;
 }
@@ -31,20 +37,6 @@
   width: 150px;
 }
 
-.background {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-}
-
-.background::after {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
-
 .button {
   font-family: 'Fellix';
   padding: 15px 30px 20px 30px;
@@ -62,15 +54,57 @@
 }
 
 .banner {
-  margin-top: 35vh;
+  margin: 35vh 0 0 16vw;
   top: 0;
-  margin-left: 16vw;
   color: white;
   position: absolute;
 }
 
 .slogan {
   font-size: 77px;
+}
+
+@media only screen and (min-width: 901px) {
+  .background {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .background::after {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-size: 340vw;
+    background-position-x: -190vw;
+  }
+  .navBar, #about {
+    display: none;
+  }
+  .logo, .topLogo {
+    margin-left: 5vw;
+  }
+  .banner {
+    margin: 30vw 0 0 10vw;
+    max-width: 80%;
+  }
+  .slogan {
+    font-size: 13vw;
+  }
+  .sloganSub {
+    font-size: 22px;
+    line-height: 15px;
+  }
+  .button {
+    padding: 13px;
+    font-size: 16px;
+  }
 }
 
 .cursoImg {
@@ -133,6 +167,57 @@
   padding-top: 170px;
 }
 
+.aboutBox1 {
+  padding-top: 100px;
+  font-family: Fellix;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 60px;
+  max-width: 50%;
+  line-height: 70px;
+}
+
+.aboutBox2 {
+  font-weight: 300;
+  max-width: 60%;
+  font-size: 25px;
+}
+
+.aboutText {
+  color: #6d6d84;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .cursoImg {
+    width: 200px;
+  }
+  .cursoFiltro {
+    width: 220px;
+    height: 220px;
+  }
+  .cursoBorder {
+    width: 240px;
+    height: 240px;
+  }
+  .aboutBox1 {
+    max-width: 80%;
+    font-size: 40px;
+    padding-top: 120vw;
+  }
+  .aboutBox2 {
+    padding-top: 15px;
+    font-weight: 300;
+    max-width: 80%;
+    font-size: 21px;
+  }
+  .aboutText {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
 .footer {
   margin-top: 93vh;
   top: 0;
@@ -159,6 +244,20 @@
 
 .icono {
   font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .infoLogo {
+    max-width: 250px;
+  }
+  .infoTexto {
+    font-size: 17px;
+    max-width: 300px;
+    margin: auto;
+  }
+  .ubicacionTexto {
+    font-size: 16px;
+  }
 }
 
 #servicios {

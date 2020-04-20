@@ -56,3 +56,59 @@ z-index: -1;
     padding-top: 170px;
 }
 
+.aboutBox1{
+    padding-top: 100px;
+    font-family: Fellix; 
+    padding-bottom: 30px; 
+    font-weight: 300;
+    font-size: 60px;
+    max-width: 50%;
+    line-height: 70px;
+}
+
+.aboutBox2 {
+    font-weight: 300;
+    max-width: 60%; 
+    font-size: 25px;
+}
+
+.aboutText{
+    color: rgb(109,109,132);
+    font-size: 25px; 
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .cursoImg {
+        width: 200px;
+    }
+
+    .cursoFiltro {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cursoBorder {
+        width: 240px;
+        height: 240px;
+    }
+
+    .aboutBox1 {
+        max-width: 80%;
+        font-size: 40px;
+        padding-top: 120vw;
+    }
+
+    .aboutBox2 {
+        padding-top: 15px;
+        font-weight: 300;
+        max-width: 80%; 
+        font-size: 21px;
+    }
+
+    .aboutText{
+        font-size: 22px; 
+        font-weight: 500;
+    }
+}

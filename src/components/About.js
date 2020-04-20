@@ -5,14 +5,14 @@ export default function Content(props) {
     return (
         <div id='nosotros' style={{marginTop:'44vw', width:'100%'}}>
             <Box display="flex" width='100%'>
-                <Box m="auto" style={{paddingTop:'100px',fontFamily: 'Fellix', paddingBottom:'30px', fontWeight: '300', fontSize:'60px', maxWidth:'50%', lineHeight:'70px'}}>  
-                <span style={{color: 'rgb(109,109,132)', fontSize:'25px', fontWeight: '500'}}>Cursos Online | Presenciales</span> <br/>
+                <Box m="auto" className='aboutBox1'>  
+                <span className='aboutText'>Cursos Online | Presenciales</span> <br/>
                 Un mundo de posibilidades para tu formación
                 </Box>
             </Box>
         
             <Box display="flex" width='100%'>
-                <Box m="auto" style={{fontWeight: '300', maxWidth:'60%', fontSize:'25px'}}>
+                <Box m="auto" className='aboutBox2'>
                     En <strong>Yachana</strong> nos especializamos por tener a tu disposición los mejores cursos de capacitación para diferentes áreas de diseño y edición, con profesores altamente calificados y certificación 
                     internacional avalada por <strong >Autodesk®</strong>, permitiéndote tener la mejor experiencia en estudios a distancia. 
                 </Box>

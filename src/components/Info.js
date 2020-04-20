@@ -20,17 +20,17 @@ export default function Content(props) {
                     <img src='/autodesk1.png' style={{width: '120px'}}/>  
                     <img src='/autodesk2.png' style={{width: '120px', marginLeft:'30px'}}/> <br/>
                 </Grid>
-                <Grid item lg={2} style={{margin:'auto', paddingBottom:'60px', fontSize:'18px', maxWidth:'80%'}} >
+                <Grid item lg={2} style={{margin:'auto', paddingBottom:'60px', maxWidth:'80%'}} >
                     <RoomOutlinedIcon style={{fontSize: '35px', margin: 'auto'}}/>  <br/>                 
-                    Edificio Parque Central, Shyris, Av. Eloy Alfaro N23-43. Quito 170135, Ecuador. <br/><br/><br/>
+                    <span className='ubicacionTexto'> Edificio Parque Central, Shyris, Av. Eloy Alfaro N23-43. Quito 170135, Ecuador. </span> <br/><br/><br/>
     
-                    <LocalPhoneOutlinedIcon style={{fontSize: '35px', margin: 'auto'}}/>   <br/>  
-                    +593983201675  <br/><br/><br/>
+                    <LocalPhoneOutlinedIcon style={{fontSize: '35px', margin: 'auto'}} />    <br/>  
+                    <span className='ubicacionTexto'> +593983201675  </span> <br/><br/><br/>
                     
                     <MailOutlineOutlinedIcon style={{fontSize: '35px'}}/> <br/>  
-                    sales@centrodecapacitacion.com <br/><br/>
+                    <span className='ubicacionTexto'> sales@centrodecapacitacion.com </span> <br/><br/>
                 </Grid>
-                <Grid item lg={4} sm={11} style={{margin:'auto'}} >
+                <Grid item lg={4} sm={11} style={{margin:'auto'}}>
                     <p style={{fontSize:'30px', fontFamily:'fellix'}}>
                         ¿Listo para crear experiencias? <br/> <strong>Contáctanos</strong> <br/>
                         <form noValidate autoComplete="off" style={{padding:'100px'}}>

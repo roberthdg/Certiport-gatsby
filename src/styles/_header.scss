@@ -1,3 +1,9 @@
+body {
+    background-image: url('https://fletesya.cl/img/gatsby/background.jpeg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
 .navItem {
     padding: 3vh;
     &:hover{
@@ -25,19 +31,6 @@
     width: 150px;
 }
 
-.background {
-    top: 0;
-    left: 0; 
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-    &::after {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 .button {
     font-family: 'Fellix';
     padding: 15px 30px 20px 30px;
@@ -53,13 +46,65 @@
 }
 
 .banner {
-    margin-top: 35vh;
+    margin: 35vh 0 0 16vw;
     top: 0;
-    margin-left: 16vw;
     color: white; 
     position: absolute;
 }
 
 .slogan {
     font-size: 77px;
+}
+
+@media only screen and (min-width: 901px) {
+    .background {
+        top: 0;
+        left: 0; 
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        &::after {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        background-size: 340vw;
+        background-position-x: -190vw;
+    }
+
+    .navBar, #about {
+        display: none;
+    }
+
+    .logo, .topLogo {
+        margin-left: 5vw;
+    }
+
+    .banner {
+        margin: 30vw 0 0 10vw;
+        max-width: 80%;
+    }
+
+    .slogan {
+        font-size: 13vw;
+    }
+
+    .sloganSub {
+        font-size: 22px;
+        line-height: 15px;
+    }
+
+    .button {
+        padding: 13px;
+        font-size: 16px;
+    }
+
+
+
 }

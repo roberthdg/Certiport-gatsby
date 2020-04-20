@@ -33,7 +33,7 @@ const div = {
 export default function Content(props) {
     return (
         <div className={props.classes.root} id='cursos' style={div}>
-            <Typography variant='h4' style={{fontFamily:'fellix'}}>
+            <Typography variant='h4' style={{fontFamily:'fellix', maxWidth:'80%', margin:'auto'}}>
                 Próximos cursos <strong>OnLine</strong>
             </Typography>
             <Grid container  style={{maxWidth:'1800px', margin:'auto', marginTop:'10px'}}>
