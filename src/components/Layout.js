@@ -9,6 +9,7 @@ import CoursesInfo from './CoursesInfo';
 import NextCourses from './NextCourses';
 import Contact from './Contact';
 import Info from './Info';
+import FixedButton from  './FixedButton';
 
 
 const useStyles = makeStyles(theme => ({
@@ -84,6 +85,10 @@ export default function Layout(props) {
         <CssBaseline />
 
         <Header classes={classes} trigger={trigger} scrollTo={scrollTo}/>
+
+        { trigger? <FixedButton scrollTo={scrollTo} type='scrollTo'/> : null }
+
+        <FixedButton />
 
         <main style={{textAlign:'center'}}>    
             <About />

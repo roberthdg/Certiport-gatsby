@@ -82,6 +82,53 @@ body {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.fixedButton {
+  position: fixed;
+  right: 5vw;
+  bottom: 5vh;
+  background-color: rgba(31, 84, 115, 0.596);
+  padding: 6px 3px 0 8px;
+  -webkit-animation: 2s fadeIn;
+          animation: 2s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 99;
+}
+
+.fixedButton:hover {
+  background-color: #1f5473;
+}
+
+.whatsapp {
+  background-color: rgba(64, 195, 81, 0.747);
+  padding: 5px 2px 0 6px;
+  border-radius: 50px;
+  right: auto;
+  left: 5vw;
+}
+
+.whatsapp:hover {
+  background-color: #40c351;
+}
+
 @media only screen and (max-width: 900px) {
   body {
     background-size: 340vw;
@@ -217,15 +264,6 @@ body {
   color: #6d6d84;
   font-size: 25px;
   font-weight: 500;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
