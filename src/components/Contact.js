@@ -30,9 +30,9 @@ export default function Content(props) {
     const [current, setCurrent] = useState(0);
  
     return (
-        <div style={{marginTop:'100px', marginBottom:'80px', width:'100%'}}>
+        <div style={{margin:'100px auto 80px auto', width:'100%'}}>
             <div className='testimonios'>
-                <img src="/testimonios.png" alt='testimonios' className='quoteImage'/>
+                <img src="/testimonios.jpg" alt='testimonios' className='quoteImage'/>
                 <p style={{ fontFamily:'fellix'}}>
                     <br />
                     {testimonios[current].cita} <br />
@@ -40,7 +40,7 @@ export default function Content(props) {
                     <div className='profesion'>{testimonios[current].profesion} </div>
                 </p>
                 {testimonios.map((item, i) => (
-                    <span className={current===i? 'punto active' : 'punto'} onClick={() => setCurrent(i)} />
+                    <span className={current===i? 'punto active' : 'punto'} onClick={() => setCurrent(i)} id='contactanos'/>
                 ))}
             </div>
             <Typography variant='h4' style={{ fontFamily:'fellix'}}>

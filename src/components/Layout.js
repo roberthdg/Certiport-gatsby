@@ -98,7 +98,7 @@ export default function Layout(props) {
             <Info />
         </main>
 
-        <footer style={{width:'100%', height:'40px', paddingTop:'10px', paddingLeft:'10vw', marginTop:'-2vh', background:'rgb(31,84,115)', color:'white'}}>
+        <footer style={{width:'100vw', height:'40px', paddingTop:'10px', paddingLeft:'10vw', marginTop:'-2vh', background:'rgb(31,84,115)', color:'white'}}>
           © 2020 | Made by <a href='https://roberthdg.site' target='_blank' style={{textDecoration:'none', color: 'white'}}><strong>Roberth Gómez</strong></a>           
         </footer>
         </>

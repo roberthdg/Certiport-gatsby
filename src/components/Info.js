@@ -23,7 +23,7 @@ export default function Content(props) {
     const classes = useStyles();
     return (            
         <div id='contacto'>
-            <img src='/bottom.png' draggable={false} style={{width:'100vw'}}/>
+            <img src='/bottom.png' draggable={false} style={{width:'100vw', marginTop: '-2px'}}/>
             <Grid container style={{marginTop:'120px', paddingBottom:'60px'}}>
                 <Grid item lg={3} sm={10} style={{margin:'auto', paddingBottom:'80px'}} >
                     <img src='/logo_blue.png' className='infoLogo'/> <br/>
@@ -45,7 +45,7 @@ export default function Content(props) {
                     <MailOutlineOutlinedIcon style={{fontSize: '35px'}}/> <br/>  
                     <span className='ubicacionTexto'> sales@centrodecapacitacion.com </span> <br/><br/>
                 </Grid>
-                <Grid item lg={3} sm={11} style={{margin:'0 auto', maxWidth:'85%'}} id='contactanos'>
+                <Grid item lg={3} sm={11} style={{margin:'0 auto', maxWidth:'85%'}}>
                     <p style={{fontSize:'22px', fontFamily:'fellix'}}>
                         ¿Quieres recibir notificaciones sobre nuevos cursos y programas de certificación?<br/><strong>Suscríbete</strong><br/><br/>                 
                         <TextField

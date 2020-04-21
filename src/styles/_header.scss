@@ -92,6 +92,7 @@ body {
     animation: 2s fadeIn;
     animation-fill-mode: forwards;
     z-index: 99;
+    cursor: pointer;
     &:hover {
         background-color: rgb(31,84,115);
     }
@@ -170,5 +171,12 @@ body {
         top: 15px;
     }
 
+    .fixedButton {
+        right: 30px;
+    }
 
+    .whatsapp {
+        right: auto;
+        left: 30px;
+    }
 }
