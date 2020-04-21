@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     appBarTop: {
       color: 'white',
       backgroundColor: 'transparent',
-      boxShadow: 'none'
+      boxShadow: 'none',
     },
     appBarScroll: {
         transition: 'smooth',
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'white',
         height: '77px',
         [theme.breakpoints.down('sm')]: {
-            height: '60px'
+            height: '60px',
         }
     },
     paper: {

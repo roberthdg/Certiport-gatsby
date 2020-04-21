@@ -40,8 +40,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     &:hover {
-        color: black;
-        background: white;
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(60,116,158,1) 0%, rgba(84,183,203,1) 100%);
     }
 }
 
@@ -80,6 +79,7 @@ body {
     body {
         background-size: 340vw;
         background-position-x: -190vw;
+        margin-left: -5%;
     }
 
     .logo {
@@ -115,6 +115,9 @@ body {
 
     .sloganSub {
         font-size: 22px;
+        padding: 20px 0 20px 0;
+        line-height: 25px;
+        max-width: 90%;
     }
 
     .button {

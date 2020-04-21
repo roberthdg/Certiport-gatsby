@@ -3,14 +3,29 @@ import Grid from '@material-ui/core/Grid';
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
-import Input from '@material-ui/core/Input';
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    multilineColor:{
+      color:'white'
+    },
+    notchedOutline: {
+      borderWidth: "1px",
+      borderColor: "rgb(159,167,191) !important"
+    },
+    floatingLabelFocusStyle: {
+      color: 'white !important'
+    }
+})
 
 export default function Content(props) {
+    const classes = useStyles();
     return (            
         <div id='contacto'>
             <img src='/bottom.png' draggable={false} style={{width:'100vw'}}/>
             <Grid container style={{marginTop:'120px', paddingBottom:'60px'}}>
-                <Grid item lg={4} sm={10} style={{margin:'auto', paddingBottom:'80px'}} >
+                <Grid item lg={3} sm={10} style={{margin:'auto', paddingBottom:'80px'}} >
                     <img src='/logo_blue.png' className='infoLogo'/> <br/>
                     <p className='infoTexto'>
                         Encaminados en el esfuerzo hacia la optimización de la enseñanza de herramientas 
@@ -30,14 +45,23 @@ export default function Content(props) {
                     <MailOutlineOutlinedIcon style={{fontSize: '35px'}}/> <br/>  
                     <span className='ubicacionTexto'> sales@centrodecapacitacion.com </span> <br/><br/>
                 </Grid>
-                <Grid item lg={4} sm={11} style={{margin:'auto'}} id='contactanos'>
-                    <p style={{fontSize:'30px', fontFamily:'fellix'}}>
-                        ¿Listo para crear experiencias? <br/> <strong>Contáctanos</strong> <br/>
-                        <form noValidate autoComplete="off" style={{padding:'100px'}}>
-                            <Input defaultValue="Nombre" inputProps={{ 'aria-label': 'description' }} />
-                            <Input placeholder="Placeholder" inputProps={{ 'aria-label': 'description' }} />
-                            <Input defaultValue="Error" error inputProps={{ 'aria-label': 'description' }} />
-                        </form>
+                <Grid item lg={3} sm={11} style={{margin:'0 auto', maxWidth:'85%'}} id='contactanos'>
+                    <p style={{fontSize:'22px', fontFamily:'fellix'}}>
+                        ¿Quieres recibir notificaciones sobre nuevos cursos y programas de certificación?<br/><strong>Suscríbete</strong><br/><br/>                 
+                        <TextField
+                            label="Correo electrónico"
+                            variant="filled"
+                            InputLabelProps={{
+                                className: classes.floatingLabelFocusStyle,
+                                }}
+                            InputProps={{
+                                classes: {
+                                    notchedOutline: classes.notchedOutline
+                                },
+                                className: classes.multilineColor
+                            }}
+                        /> <br /> <br />
+                        <a style={{padding:'15px', margin:'10px', backgroundColor:'white', fontSize:'15px', color:'black', borderRadius:'3px', cursor:'pointer'}}>ENVIAR</a> 
                     </p>
                 </Grid>
             </Grid>

@@ -10,7 +10,7 @@ export default function Header(props) {
                 <div className='banner'>
                     <Typography variant='h4' style={{fontFamily: 'Fellix', lineHeight:'55px'}}>
                         <span className='slogan'>Tu camino al <strong>ÉXITO</strong> </span> <br />
-                        <span className='sloganSub'>Mejora tus habilidades con cursos y certificaciones online <br /></span>
+                        <div className='sloganSub'>Mejora tus habilidades con cursos y certificaciones online <br /></div>
                         <a className='button' onClick={()=> props.scrollTo(document.getElementById('cursos'))}> Más información</a>
                     </Typography>             
                 </div>

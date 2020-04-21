@@ -49,8 +49,8 @@ body {
 }
 
 .button:hover {
-  color: black;
-  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(0%, #3c749e), to(#54b7cb));
+  background: linear-gradient(180deg, #020024 0%, #3c749e 0%, #54b7cb 100%);
 }
 
 .banner {
@@ -86,6 +86,7 @@ body {
   body {
     background-size: 340vw;
     background-position-x: -190vw;
+    margin-left: -5%;
   }
   .logo {
     -webkit-transition: .3s;
@@ -116,6 +117,9 @@ body {
   }
   .sloganSub {
     font-size: 22px;
+    padding: 20px 0 20px 0;
+    line-height: 25px;
+    max-width: 90%;
   }
   .button {
     padding: 13px;
@@ -304,6 +308,14 @@ body {
   .aboutText {
     font-size: 22px;
     font-weight: 500;
+  }
+  .testimonios {
+    max-width: 80%;
+  }
+  .contactoTitulo {
+    font-size: 30px;
+    max-width: 80%;
+    margin: auto;
   }
 }
 
