@@ -274,22 +274,11 @@ body {
   font-weight: 500;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .testimonios {
   max-width: 700px;
   margin: auto;
   padding-bottom: 60px;
   font-size: 20px;
-  -webkit-animation: fadeIn ease 10s;
-          animation: fadeIn ease 10s;
 }
 
 .autor {
@@ -326,6 +315,10 @@ body {
   z-index: -1;
   margin: -1vh 0 0 -1vh;
   opacity: 0.4;
+}
+
+.loader {
+  margin: 50px 0 0 0;
 }
 
 @media only screen and (max-width: 900px) {

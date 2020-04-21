@@ -2,65 +2,102 @@ import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-
-const testimonios = [
-    {
-        cita:'"Me permitió adquirir mayores habilidades y destrezas en el manejo de proyectos BIM a través de Revit, mi campo laboral se ha expandido y ahora puedo desarrollar actividades con mayor precisión y detalle gracias a esta herramienta."',
-        autor: 'Johanna Rojas',
-        profesion: 'Especialización BIM Arquitectura Paramétrica'
-    },
-    {
-        cita:'"En mi capacitación, además del correcto uso del software, pude comprender la importancia de un buen modelo para detectar interferencias entre múltiples disciplinas y así corregir posibles fallas durante la ejecución del proyecto."',
-        autor: 'Nicolás Peñalver',
-        profesion: 'Ingeniero mecánico'
-    },
-    {
-        cita:'"La experiencia en los cursos de Fusion 360 e Inventor fueron muy buenas, me ayudaron a generar mejor entendimiento en diseño de productos en mi carrera y también como desarrollo de mis habilidades personales."',
-        autor: 'Manuel Alayón',
-        profesion: 'Estudiante de diseño industrial'
-    },
-    {  
-        cita:'"El beneficio principal a nivel profesional es notable, las herramientas aprendidas me permiten trabajar de manera práctica y rápida en la extracción y manejo de información relevante al proyecto."',
-        autor: 'Kairaly Rojas',
-        profesion: 'Arquitecto'
-    }
-]
+import Testimonial from './Testimonial';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function Content(props) {
-    const [current, setCurrent] = useState(0);
- 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [displayAlert, setDisplayAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
+    const [displayLoader, setDisplayLoader] = useState(false);
+    const [disableField, setDisableField] = useState(false);
+    const regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   
+
+    function sendMessage() {
+        setDisplayAlert(false);
+        
+        if(email=='' || message=='') {
+            setDisplayAlert(true);
+            setAlertMessage(['warning', 'Debes llenar todos los campos requeridos']);
+        }
+        else if(regexEmail.test(email)==false) {
+            setDisplayAlert(true);
+            setAlertMessage(['warning', 'Por favor ingrese una dirección de correo válida']);
+        }
+        else {
+            setDisplayLoader(true);
+            setDisableField(true);
+            fetch(`https://fletesya.cl/api/mail`, {
+                headers:{
+                    'Content-Type': 'application/json'
+                  },
+                method:'POST',
+                body: JSON.stringify({mail: email, message: message, yachana: true})
+            })
+            .then(res => {
+                setName('');
+                setEmail('');
+                setMessage('');
+                setDisplayAlert(true);
+                setAlertMessage(['success','Mensaje enviado']);
+                setDisplayLoader(false);
+                setDisableField(false);
+            })
+            .catch(error => {
+                setDisplayLoader(false);
+                setDisableField(false);
+                setDisplayAlert(true);
+                setAlertMessage(['error', 'Error: el mensaje no pudo ser enviado']);
+            })
+        }
+    }
+
     return (
         <div style={{margin:'100px auto 80px auto', width:'100%'}}>
-            <div className='testimonios'>
-                <img src="/testimonios.jpg" alt='testimonios' className='quoteImage'/>
-                <p style={{ fontFamily:'fellix'}}>
-                    <br />
-                    {testimonios[current].cita} <br />
-                    <div className='autor'>{testimonios[current].autor} <br /> </div>
-                    <div className='profesion'>{testimonios[current].profesion} </div>
-                </p>
-                {testimonios.map((item, i) => (
-                    <span className={current===i? 'punto active' : 'punto'} onClick={() => setCurrent(i)} id='contactanos'/>
-                ))}
-            </div>
+            <Testimonial />
             <Typography variant='h4' style={{ fontFamily:'fellix'}}>
                 <div className='contactoTitulo'>
                     ¿Listo para crear experiencias? <br/>
                     <strong>Comunícate con nosotros</strong>
                 </div>
             </Typography> 
+            { displayLoader? <div className='loader'> <CircularProgress size='50px' style={{color:'rgb(62,121,161)'}} /> </div> : null}
+            { displayAlert
+            ? <div style={{fontSize:'16px', maxWidth:'80%', margin: 'auto'}}> <br /> <strong style={alertMessage[0]==='success'? {color:'green'} : {color: 'red'}}> {alertMessage[1]} </strong></div>     
+            : null }
             <Grid container spacing={0} style={{maxWidth: '50%', margin:'30px auto'}}> 
                 <Grid item lg={5} sm={11} style={{margin: '10px auto'}}>
-                    <TextField label="Nombre" fullWidth/>
+                    <TextField 
+                        value={name}
+                        disabled={disableField}
+                        onChange={e => setName(e.target.value)} 
+                        label="Nombre" 
+                        fullWidth
+                    />
                 </Grid> 
                 <Grid item lg={5} sm={11} style={{margin: '10px auto'}}>
-                <TextField label="Correo" fullWidth/>
+                <TextField 
+                    label="Correo"
+                    value={email}
+                    disabled={disableField}
+                    onChange={e => setEmail(e.target.value)} 
+                    fullWidth
+                />
                 </Grid>
                 <Grid item lg={11} sm={11} style={{margin: '30px auto'}}>
-                    <TextField label="Mensaje" fullWidth/>
+                    <TextField 
+                        value={message}
+                        disabled={disableField}
+                        onChange={e => setMessage(e.target.value)}
+                        label="Mensaje" 
+                        fullWidth
+                    />
                 </Grid>
             </Grid>
-            <a className='button' style={{color:'white'}} > Enviar</a> 
+            <a onClick={() => displayLoader? null: sendMessage()} className='button' style={{color:'white'}} > Enviar</a> 
         </div>
     );
 }

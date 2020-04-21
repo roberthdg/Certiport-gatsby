@@ -78,17 +78,11 @@
     font-weight: 500;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
 .testimonios{
     max-width: 700px;
     margin:auto;
     padding-bottom: 60px;
     font-size: 20px;
-    animation: fadeIn ease 10s;
 }
 
 .autor {
@@ -124,6 +118,10 @@
     z-index:-1;
     margin: -1vh 0 0 -1vh;
     opacity: 0.4;
+}
+
+.loader {
+    margin:50px 0 0 0;
 }
 
 
