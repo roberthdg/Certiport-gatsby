@@ -26,10 +26,14 @@ const testimonios = [
 export default function Content(props) {
     const [current, setCurrent] = useState(0);
 
+    const changeQuote = () => {
+        current===testimonios.length-1? setCurrent(0) : setCurrent(current+1)
+    }
+
     return (
         <div className='testimonios'>
             <img src="/testimonios.jpg" alt='testimonios' className='quoteImage'/>
-            <p style={{ fontFamily:'fellix'}}>
+            <p style={{ fontFamily:'fellix', cursor: 'pointer', userSelect: 'none'}} onClick={() => changeQuote()}>
                 <br />
                 {testimonios[current].cita} <br />
                 <div className='autor'>{testimonios[current].autor} <br /> </div>

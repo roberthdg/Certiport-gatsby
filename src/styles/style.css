@@ -64,39 +64,21 @@ body {
   font-size: 77px;
 }
 
-@media only screen and (min-width: 901px) {
-  .background {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-  }
-  .background::after {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-  }
-  .toggle {
-    display: none;
-  }
-}
-
 @-webkit-keyframes fadeIn {
-  99% {
-    visibility: hidden;
+  0% {
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  99% {
-    visibility: hidden;
+  0% {
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -128,6 +110,24 @@ body {
 
 .whatsapp:hover {
   background-color: #40c351;
+}
+
+@media only screen and (min-width: 901px) {
+  .background {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .background::after {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .toggle {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {

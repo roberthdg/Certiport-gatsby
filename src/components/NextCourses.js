@@ -59,7 +59,7 @@ export default function Content(props) {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary" style={{margin:'auto', fontWeight:'bold'}}>
+                                <Button size="small" target="_blank" rel="noopener noreferrer" href="https://wa.me/593983201675" color="primary" style={{margin:'auto', fontWeight:'bold'}}>
                                 Regístrate
                                 </Button>
                             </CardActions>

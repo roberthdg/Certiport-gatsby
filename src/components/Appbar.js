@@ -58,7 +58,7 @@ function Appbar(props) {
                 <span onClick={()=> props.scrollTo(document.getElementById('inicio'))} className={props.trigger ? 'navItem' : 'navItem top'}> Inicio </span>
                 <span onClick={()=> props.scrollTo(document.getElementById('nosotros'))}  className={props.trigger ? 'navItem' : 'navItem top'}> Nosotros </span>
                 <span onClick={()=> props.scrollTo(document.getElementById('cursos'))}  className={props.trigger ? 'navItem' : 'navItem top'}> Cursos </span>
-                <span onClick={()=> props.scrollTo(document.getElementById('contacto'))} className={props.trigger ? 'navItem' : 'navItem top'}> Contáctanos </span>
+                <span onClick={()=> props.scrollTo(document.getElementById('contactanos'))} className={props.trigger ? 'navItem' : 'navItem top'}> Contáctanos </span>
             </Typography>
             <div className={props.trigger ? 'toggle' : 'toggle scroll'}>
                 <Button
