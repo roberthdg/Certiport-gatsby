@@ -64,7 +64,7 @@ export default function Content(props) {
 
     return (            
         <div id='contacto'>
-            <img src='/bottom.png' draggable={false} style={{width:'100vw', marginTop: '-2px'}}/>
+            <img src='/bottom.png' draggable={false} style={{width:'100vw', marginTop: '-6px'}}/>
             <Grid container style={{marginTop:'120px', paddingBottom:'60px'}}>
                 <Grid item lg={3} sm={10} style={{margin:'auto', paddingBottom:'80px'}} >
                     <img src='/logo_blue.png' className='infoLogo'/> <br/>
@@ -73,8 +73,6 @@ export default function Content(props) {
                         de computación para estudiantes y profesionales, haciendo más rentables sus servicios en 
                         las áreas de <strong>Ingeniería, Arquitectura, Diseño y Ofimática</strong>.
                     </p> <br/>
-                    <img src='/autodesk1.png' style={{width: '120px'}}/>  
-                    <img src='/autodesk2.png' style={{width: '120px', marginLeft:'30px'}}/> <br/>
                 </Grid>
                 <Grid item lg={2} style={{margin:'auto', paddingBottom:'60px', maxWidth:'80%'}} >
                     <RoomOutlinedIcon style={{fontSize: '35px', margin: 'auto'}}/>  <br/>                 
