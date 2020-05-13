@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import Testimonial from './Testimonial';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function Content(props) {
@@ -57,7 +56,6 @@ export default function Content(props) {
 
     return (
         <div style={{margin:'100px auto 80px auto', width:'100%'}}>
-            <Testimonial />
             <Typography variant='h4' style={{ fontFamily:'fellix'}}>
                 <div className='contactoTitulo'>
                     ¿Listo para crear experiencias? <br/>
