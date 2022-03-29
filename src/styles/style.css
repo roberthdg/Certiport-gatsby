@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("https://fletesya.cl/img/gatsby/background.jpeg");
+  background-image: url("/background.jpeg");
   background-size: 100vw;
   background-repeat: no-repeat;
 }
